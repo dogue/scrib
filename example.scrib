@@ -1,0 +1,6 @@
+@read("myfile.txt") |> @grepi("foo")
+@print($SHELL)
+
+if $EDITOR != "nvim" then @print("sad")
+
+if $EDITOR == "nano" then $EDITOR = "nvim"
